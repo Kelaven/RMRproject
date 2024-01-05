@@ -24,4 +24,9 @@ class Category{
     public function set_name(string $name){
         $this->name = $name;
     }
+
+    // * création de la méthode magique construct
+    function __construct(string $name){
+        $this->name = $name;
+    }
 }
